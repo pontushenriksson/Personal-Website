@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Proza+Libre:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  background: #12151A;
+  height: 80px;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-btn {
+    visibility: showed;
+    display: flex;
+    align-items: center;
+    padding: 22px 22px;
+  }
+}
+
+div.name {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+div.name {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+label.fname {
+  position: absolute;
+  top: 20px;
+  color: #0086FF;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+label.lname {
+  position: absolute;
+  top: 40px;
+  padding-left: -20px;
+  color: #EB3160;
+  font-size: 20px;
+  font-weight: bolder;
+}
